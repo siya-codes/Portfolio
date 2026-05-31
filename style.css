@@ -10,7 +10,7 @@ html{
 
 body {
     background: #080808;
-    color: #e4e4e7;
+    color: #010200;
     overflow-x: hidden;
     line-height: 1.6;
     font-size: 16px;
@@ -1120,7 +1120,7 @@ nav ul li a:hover::after {
 
 /* ---- Right — form card ---- */
 .contact-form-card {
-    background: #0d1a0a;
+    background: #195b0a;
     border: 1px solid rgba(255,255,255,0.07);
     border-radius: 24px;
     padding: 40px 36px;
@@ -1143,7 +1143,7 @@ nav ul li a:hover::after {
 .contact-form-card__heading {
     font-size: 20px;
     font-weight: 700;
-    color: #fff;
+    color: #e4e1e1;
     margin-bottom: 28px;
 }
 
@@ -1297,7 +1297,7 @@ form textarea {
     background: #111;
     font-weight: 300;
     font-size: 14px;
-    color: #ababab;
+    color: #887171;
     border-top: 1px solid #262626;
     margin-top: 0;
 }
@@ -1413,7 +1413,7 @@ img {
     }
 
     nav ul {
-        background: #1a2e05;
+        background: #caec7a;
         position: fixed;
         top: 0;
         right: -200px;
@@ -1437,7 +1437,7 @@ img {
         content: '';
         position: fixed;
         inset: 0;
-        background: rgba(0, 0, 0, 0.6);
+        background: rgba(12, 13, 11, 0.6);
         z-index: 50;
     }
 
@@ -1568,5 +1568,22 @@ img {
         .work:active .layer {
             min-height: 100%;
         }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    nav ul {
+        z-index: 99999 !important;
+    }
+
+    nav ul .fa-times {
+        z-index: 100000 !important;
+        cursor: pointer;
+        color: #1a3a06;
+    }
+
+    body.menu-open::before {
+        pointer-events: none !important;
     }
 }
